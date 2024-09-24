@@ -6,8 +6,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
       rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/main.css" />
     <title>EWRA Trading Shop</title>
   </head>
 
@@ -15,7 +17,11 @@
     <header>
       <!-- Text oben links auf der Nav -->
       <div class="logo">
-        <img src="resources/images/EWRA Logo.png" alt="" />
+        <img
+          src="resources/images/EWRA Logo.png"
+          alt="EWRA Logo"
+          aria-label="EWRA Logo"
+        />
       </div>
       <nav>
         <ul>
@@ -27,7 +33,7 @@
       </nav>
       <!-- Warenkorb oben rechts -->
       <div class="cart-btn">
-        <button>Warenkorb 🛒</button>
+        <button aria-label="Open Cart">Warenkorb 🛒</button>
       </div>
     </header>
 
@@ -37,7 +43,7 @@
         <div class="hero-content">
           <h1>Willkommen bei EWRA Trading</h1>
           <p>Entdecke unsere süßen Köstlichkeiten mit Herz!</p>
-          <button class="buy-now-btn" role="button">
+          <button class="buy-now-btn" role="button" aria-label="Discover Candy">
             Entdecken Sie unsere Bonbons!
           </button>
         </div>
@@ -49,8 +55,9 @@
           <div class="product-card">
             <img
               src="resources/images/highlight-rote-bonbons.jpg"
-              alt=""
+              alt="Rote Bonbons"
               class="product-image"
+              loading="lazy"
             />
             <h3 class="product-title">Rote Bonbons</h3>
             <p class="product-description">
@@ -62,8 +69,9 @@
           <div class="product-card">
             <img
               src="resources/images/blue-bonbons.jpg"
-              alt=""
+              alt="Blaue Bonbons"
               class="product-image"
+              loading="lazy"
             />
             <h3 class="product-title">Blaue Bonbons</h3>
             <p class="product-description">
@@ -90,7 +98,6 @@
         <button class="close-cart">Schließen</button>
       </div>
     </div>
-    
   </body>
-  <script src="resources/js/cart.js"></script>
+  <script src="resources/js/cart.js" defer></script>
 </html>

@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="resources/css/main.css" />
+    <title>Produkte | EWRA Trading Shop</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="resources/css/style.css"
-  >
-  <title>Produkte | EWRA Trading Shop</title>
-</head>
-
-<body>
-  <header>
-    <!-- Text oben links auf der Nav -->
-    <div class="logo">
-      <img
-        src="resources/images/EWRA Logo.png"
-        alt=""
-      />
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="ueber-uns.html">Über uns</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <!-- Warenkorb oben rechts -->
-    <div class="cart-btn">
-      <button>Warenkorb 🛒</button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Titel des Shops -->
-    <section class="shop-header">
-      <h1>Unser Shop</h1>
-      <p>Durchstöbern Sie unsere köstlichen Bonbons.</p>
-    </section>
-
-    <!-- Produkte Übersicht -->
-    <section class="shop-products">
-      <div class="product-grid">
-        <!-- Produkt 1 -->
-        <div class="product-card">
-          <img
-            src="resources/images/red-bonbons.jpg"
-            alt=""
-          >
-          <h3 class="product-title">Rote Erdbeer Bonbons</h3>
-          <p class="product-description">Fruchtige Erdbeerbonbons, perfekt für Liebhaber.</p>
-          <p class="product-price">7.49€</p>
-          <button class="product-btn red">In den Warenkorb</button>
-        </div>
-
-        <!-- Produkt 2 -->
-        <div class="product-card">
-          <img
-            src="resources/images/blue-bonbons.jpg"
-            alt=""
-          >
-          <h3 class="product-title">Blaue Himbeer Bonbons</h3>
-          <p class="product-description">Erfrischend süße Himbeerbonbons für jeden Tag.</p>
-          <p class="product-price">7.49€</p>
-          <button class="product-btn blue">In den Warenkorb</button>
-        </div>
+  <body>
+    <header>
+      <!-- Text oben links auf der Nav -->
+      <div class="logo">
+        <img src="resources/images/EWRA Logo.png" alt="EWRA Logo" loading="lazy" aria-label="EWRA Logo"/>
       </div>
-    </section>
-  </main>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- Warenkorb oben rechts -->
+      <div class="cart-btn">
+        <button aria-label="Open Cart">Warenkorb 🛒</button>
+      </div>
+    </header>
 
-  <footer>
-    <p>
-      &copy; EWRA Trading 2022 | <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a>
-    </p>
-  </footer>
+    <main>
+      <!-- Titel des Shops -->
+      <section class="shop-header">
+        <h1>Unser Shop</h1>
+        <p>Durchstöbern Sie unsere köstlichen Bonbons.</p>
+      </section>
 
-  <!-- Warenkorb Overlay -->
-  <div
-    id="cart-overlay"
-    class="cart-overlay"
-  >
-    <div class="cart-content">
-      <h2>Warenkorb</h2>
-      <div id="cart-items"></div>
-      <button class="close-cart">Schließen</button>
+      <!-- Produkte Übersicht -->
+      <section class="shop-products">
+        <div class="product-grid">
+          <!-- Produkt 1 -->
+          <div class="product-card">
+            <img
+              src="resources/images/red-bonbons.jpg"
+              alt="Rote Erdbeer Bonbons"
+              loading="lazy"
+            />
+            <h3 class="product-title">Rote Erdbeer Bonbons</h3>
+            <p class="product-description">
+              Fruchtige Erdbeerbonbons, perfekt für Liebhaber.
+            </p>
+            <p class="product-price">7.49€</p>
+            <button class="product-btn red">In den Warenkorb</button>
+          </div>
+
+          <!-- Produkt 2 -->
+          <div class="product-card">
+            <img
+              src="resources/images/blue-bonbons.jpg"
+              alt="Blaue Himbeer Bonbons"
+              loading="lazy"
+            />
+            <h3 class="product-title">Blaue Himbeer Bonbons</h3>
+            <p class="product-description">
+              Erfrischend süße Himbeerbonbons für jeden Tag.
+            </p>
+            <p class="product-price">7.49€</p>
+            <button class="product-btn blue">In den Warenkorb</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; EWRA Trading 2022 | <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
+    </footer>
+
+    <!-- Warenkorb Overlay -->
+    <div id="cart-overlay" class="cart-overlay">
+      <div class="cart-content">
+        <h2>Warenkorb</h2>
+        <div id="cart-items"></div>
+        <button class="close-cart">Schließen</button>
+      </div>
     </div>
-  </div>
-
-</body>
-<script src="resources/js/cart.js"></script>
-
+  </body>
+  <script src="resources/js/cart.js" defer></script>
 </html>
