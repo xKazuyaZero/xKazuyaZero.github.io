@@ -1,0 +1,37 @@
+/* Importieren aller CSS dateien */
+@import url('header.css');
+@import url('hero.css');
+@import url('products.css');
+@import url('footer.css');
+@import url('responsive.css');
+@import url('cart.css');
+<<<<<<< HEAD
+@import url('ueber-uns.css');
+@import url('kontakt.css');
+=======
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+
+/* Allgemeine Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #333;
+  background-color: #f7f7f7;
+  scroll-behavior: smooth;
+}
+
+<<<<<<< HEAD
+html {
+  font-family: "Cormorant", serif;
+}
+
+=======
+html,
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+button {
+  font-family: "Montserrat", serif;
+}

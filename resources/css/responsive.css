@@ -1,0 +1,193 @@
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 50px;
+  }
+
+  .cart-btn button {
+    padding: 8px 15px;
+  }
+
+  .buy-now-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-card {
+<<<<<<< HEAD
+    padding: 20px;
+=======
+    padding: 15px;
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  }
+
+  .product-image {
+    width: 100%;
+<<<<<<< HEAD
+    max-width: 440px;
+    height: auto;
+  }
+
+  .team-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+=======
+    height: auto;
+  }
+
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  footer {
+    padding: 10px 0;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+<<<<<<< HEAD
+  .product-information {
+    padding: 20px;
+  }
+
+=======
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .cart-btn button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+<<<<<<< HEAD
+=======
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  .buy-now-btn {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+
+<<<<<<< HEAD
+  .product-information .product-paragraph p {
+    margin: 0 50px 15px;
+=======
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .product-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+<<<<<<< HEAD
+  .team-section {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member {
+    margin-bottom: 20px;
+  }
+
+=======
+>>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .cart-btn button {
+    padding: 8px 15px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .buy-now-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
+}
+
+/* Verdoppelt groesse fuer high-DPI displays wie Retina */
+@media only screen and (min-resolution: 2dppx) {
+  .product-image {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+}
