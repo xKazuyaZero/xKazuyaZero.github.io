@@ -5,11 +5,8 @@
 @import url('footer.css');
 @import url('responsive.css');
 @import url('cart.css');
-<<<<<<< HEAD
 @import url('ueber-uns.css');
 @import url('kontakt.css');
-=======
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
 
 /* Allgemeine Styles */
 * {
@@ -24,14 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
 html {
   font-family: "Cormorant", serif;
 }
 
-=======
-html,
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
 button {
   font-family: "Montserrat", serif;
 }

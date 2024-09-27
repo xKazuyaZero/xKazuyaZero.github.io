@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Warenkorb Button */
 .cart-btn button {
   background-color: #fff;
@@ -16,8 +15,6 @@
   transition: 0.3s;
 }
 
-=======
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
 /* Warenkorb Overlay */
 .cart-overlay {
   position: fixed;
@@ -48,7 +45,6 @@
 .cart-items {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 .close-cart-icon {
   display: inline-block;
   position: absolute;
@@ -56,18 +52,3 @@
   height: 24px;
   right: 15px;
 }
-=======
-
-.close-cart {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.close-cart:hover {
-  background-color: #000;
-}
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85

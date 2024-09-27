@@ -18,16 +18,11 @@
   }
 
   .product-card {
-<<<<<<< HEAD
     padding: 20px;
-=======
-    padding: 15px;
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   }
 
   .product-image {
     width: 100%;
-<<<<<<< HEAD
     max-width: 440px;
     height: auto;
   }
@@ -36,11 +31,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-=======
-    height: auto;
-  }
-
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   footer {
     padding: 10px 0;
   }
@@ -48,13 +38,10 @@
 
 /* Mobile Screens */
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .product-information {
     padding: 20px;
   }
 
-=======
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   .product-grid {
     grid-template-columns: 1fr;
   }
@@ -70,34 +57,13 @@
     padding: 8px 12px;
   }
 
-<<<<<<< HEAD
-=======
-  .hero-content h1 {
-    font-size: 28px;
-  }
-
-  .hero-content p {
-    font-size: 14px;
-  }
-
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   .buy-now-btn {
     padding: 6px 15px;
     font-size: 12px;
   }
 
-<<<<<<< HEAD
   .product-information .product-paragraph p {
     margin: 0 50px 15px;
-=======
-  .product-card {
-    padding: 10px;
-  }
-
-  .product-image {
-    width: 100%;
-    height: auto;
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   }
 
   .product-title {
@@ -113,7 +79,6 @@
     font-size: 14px;
   }
 
-<<<<<<< HEAD
   .team-section {
     grid-template-columns: 1fr;
   }
@@ -122,8 +87,6 @@
     margin-bottom: 20px;
   }
 
-=======
->>>>>>> 817adb89bf5e3bc349f1737ba38e87232e891f85
   footer p {
     font-size: 14px;
   }
