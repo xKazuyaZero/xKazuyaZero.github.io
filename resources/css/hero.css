@@ -1,0 +1,49 @@
+/* Hero Section */
+
+.hero {
+  /* margin-top: 81px; */
+  padding: 80px 0 0;
+  background-image: url(../images/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-content h1 {
+  font-size: 4vw;
+  font-weight: 600;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 2.1vw;
+  color: #000;
+  font-weight: 300;
+}
+
+.buy-now-btn {
+  margin-top: 40px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 20px;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  background-color: #dee5ed;
+  border: 2px #fff solid;
+}

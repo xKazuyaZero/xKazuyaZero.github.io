@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <link
+        rel="stylesheet"
+        href="resources/css/main.css"
+    />
+    <title>Kontakt - EWRA Trading</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img
+                src="resources/images/EWRA Logo.png"
+                alt="EWRA Logo"
+                aria-label="EWRA Logo"
+            />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <!-- Warenkorb oben rechts -->
+        <div class="cart-btn">
+            <button
+              id="open-cart-btn"
+              aria-label="Open Cart"
+            >Warenkorb 🛒 - <span id="cart-quantity">0</span></button> <!-- Overlay für Anzahl -->
+          </div>
+    </header>
+
+    <main>
+        <section class="contact-us">
+
+
+            <div class="contact-info">
+                <h2>Kontaktinformationen</h2>
+                <p><strong class="black">Telefon:</strong> +49 123 456 789</p>
+                <p><strong class="black">Email:</strong> info@ewra-trading.de</p>
+                <p><strong class="black">Adresse:</strong> Musterstraße 1, 12345 Musterstadt, Deutschland</p>
+            </div>
+
+            <div class="map">
+                <h2>Unsere Lage</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=..."
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+
+            <h2>Kontakt</h2>
+            <p>Sie können uns über das folgende Formular erreichen:</p>
+            <form
+                action="kontakt.php"
+                method="POST"
+            >
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+                <label for="email">E-Mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+                <label for="message">Nachricht:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+
+            <div class="social-media">
+                <h3>Folgen Sie uns</h3>
+                <a
+                    href="https://www.facebook.com/"
+                    target="_new"
+                ><img
+                        src="resources/images/facbook-logo.jpg"
+                        alt="Facebook"
+                    /></a>
+                <a
+                    href="https://www.instagram.com/"
+                    target="_new"
+                ><img
+                        src="resources/images/instagram-logo.png"
+                        alt="Instagram"
+                    /></a>
+                <a
+                    href="https://x.com/"
+                    target="_new"
+                ><img
+                        src="resources/images/twitter-logo.png"
+                        alt="Twitter"
+                    /></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; EWRA Trading 2024 | <a href="impressum.html">Impressum</a> | <a
+                href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+    >
+        <div class="cart-content">
+            <h2>Dein Warenkorb</h2>
+            <div class="cart-items"><!-- Placeholder for cart items --></div>
+        </div>
+    </div>
+
+    <script
+        src="resources/js/cart.js"
+        defer
+    ></script>
+</body>
+
+</html>
