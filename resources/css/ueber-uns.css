@@ -1,6 +1,6 @@
 /* Styles für Über-uns Seite */
 .about-us {
-  padding: 60px 100px;
+  padding: 20px;
   background-color: #f7f7f7;
   color: #333;
   line-height: 1.8;
@@ -93,3 +93,14 @@
     margin-bottom: 20px;
   }
 }
+
+/* @media (max-width: 480px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-card {
+    padding: 10px;
+    font-size: 1rem;
+  }
+} */
