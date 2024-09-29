@@ -1,25 +1,36 @@
-/* Shop Header */
-.shop-header {
+/* Produktbeschreibung */
+.product-information {
+  background-color: #f5f5f5;
+  padding: 0 20px 20px;
   text-align: center;
-  padding: 20px 0 20px;
-  margin-top: 81px;
+  scroll-margin-top: 81px;
 }
 
-.shop-header h1 {
-  font-size: 36px;
+.product-information .product-paragraph {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-information .product-paragraph h2 {
+  font-size: 1.8rem;
   font-weight: 600;
   color: #333;
+  margin-bottom: 15px;
 }
 
-.shop-header p {
-  font-size: 18px;
+.product-information .product-paragraph p {
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #666;
+  text-align: center;
+  margin: 0 100px 15px;
+  font-family: "Montserrat";
 }
 
-/* Shop Produkte Section */
-.shop-products {
-  padding: 0 20px;
-  margin-bottom: 5px;
+.product-information .product-paragraph hr {
+  margin: 20px;
 }
 
 /* Product Grid */
@@ -31,14 +42,8 @@
 
 /* Produkte Section */
 .product-highlights {
-  padding: 5px 20px;
-  background-color: #ffffff;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  padding: 20px 20px 20px;
+  background-color: #f5f5f5;
 }
 
 .product-card {
@@ -46,28 +51,41 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 20px 20px 5px;
   text-align: center;
   overflow: hidden;
   height: auto;
 }
 
 .product-image {
-  width: 440px;
+  width: 80%;
+  max-width: 600px;
+  min-width: 331px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .product-title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: #333;
 }
 
 .product-description {
-  font-size: 16px;
+  font-size: 20px;
   color: #666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
 }
 
 .product-btn {
@@ -78,6 +96,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .red:hover,
@@ -92,4 +111,79 @@
 
 .blue:hover {
   background-color: #1ea0c4;
+}
+
+.product-about a {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Tablet Bildschirme */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+  }
+}
+
+/* Handy Bildschirme */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .product-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .product-information {
+    padding: 20px;
+  }
+
+  .product-information .product-paragraph p {
+    margin: 0 50px 15px;
+  }
+}
+
+/* Kleine Handy Bildschirme */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Verdoppelt groesse fuer high-DPI displays wie Retina */
+@media only screen and (min-resolution: 2dppx) {
+  .product-image {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
 }

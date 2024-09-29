@@ -2,7 +2,7 @@
 
 .hero {
   /* margin-top: 81px; */
-  padding: 80px 0 20px;
+  padding: 80px 0 0;
   background-image: url(../images/hero-background.jpg);
   background-size: cover;
   background-position: center;
@@ -11,23 +11,23 @@
 
 .hero-content {
   text-align: center;
-  padding: 80px;
+  padding: 50px;
 }
 
 .hero-content h1 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 600;
   color: #333;
 }
 
 .hero-content p {
-  font-size: 1.5vw;
+  font-size: 2.1vw;
   color: #000;
   font-weight: 300;
 }
 
-.buy-now-btn {
-  margin-top: 70px;
+.explore-now-btn {
+  margin-top: 40px;
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 4px;
@@ -41,9 +41,42 @@
   transition: transform 150ms, box-shadow 150ms;
 }
 
-.buy-now-btn:hover {
+.explore-now-btn:hover {
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
   background-color: #dee5ed;
   border: 2px #fff solid;
+}
+
+@media (max-width: 1024px) {
+  .hero .explore-now-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .explore-now-btn {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .hero .explore-now-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }

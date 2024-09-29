@@ -1,133 +1,151 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-    >
-    <link
-        rel="stylesheet"
-        href="resources/css/main.css"
-    />
+    <link rel="stylesheet" href="resources/css/main.css" />
     <title>Herzbonbons | Über uns</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <img
-                src="resources/images/EWRA Logo.png"
-                alt="EWRA Logo"
-                aria-label="EWRA Logo"
-            />
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Shop</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-        <!-- Warenkorb oben rechts -->
-        <div class="cart-btn">
-            <button
-                id="open-cart-btn"
-                aria-label="Open Cart"
-            >Warenkorb 🛒 - <span id="cart-quantity">0</span></button> <!-- Overlay für Anzahl -->
-        </div>
+      <div class="logo">
+        <img
+          src="resources/images/EWRA Logo.png"
+          alt="EWRA Logo"
+          aria-label="EWRA Logo"
+        />
+      </div>
+
+      <!-- Burger Menu Icon -->
+      <div class="burger-menu" id="burger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- Warenkorb oben rechts -->
+      <div class="cart-btn">
+        <button id="open-cart-btn" aria-label="Open Cart">
+          Warenkorb 🛒 - <span id="cart-quantity">0</span>
+        </button>
+        <!-- Overlay für Anzahl -->
+      </div>
     </header>
 
     <main>
-        <section class="about-us">
-            <h1>Über uns</h1>
+      <section class="about-us">
+        <h1>Über uns</h1>
 
-            <!-- Mission Card -->
-            <div class="about-card">
-                <h2>Unsere Mission</h2>
-                <p>Unsere Mission ist es, den Süßwarenmarkt mit handgemachten Produkten zu bereichern.</p>
-                <h2>Unsere Geschichte</h2>
-                <div class="timeline">
-                    <div class="timeline-event">
-                        <h3>2022 - Die Gründung</h3>
-                        <p>EWRA Trading wurde 2022 mit der Vision gegründet, hochwertige, handgemachte Bonbons zu
-                            produzieren.</p>
-                    </div>
-                    <div class="timeline-event">
-                        <h3>2023 - Erweiterung der Produktpalette</h3>
-                        <p>Mit neuen Geschmackssorten und innovativen Verpackungen expandierte EWRA Trading in ganz
-                            Europa.</p>
-                    </div>
-                    <div class="timeline-event">
-                        <h3>2024 - Online-Shop</h3>
-                        <p>Im Jahr 2024 wurde der Online-Shop eröffnet, um unsere Produkte einem breiteren Publikum
-                            anzubieten.</p>
-                    </div>
-                </div>
+        <!-- Mission Card -->
+        <div class="about-card">
+          <h2>Unsere Mission</h2>
+          <p>
+            Unsere Mission ist es, den Süßwarenmarkt mit handgemachten Produkten
+            zu bereichern.
+          </p>
+          <h2>Unsere Geschichte</h2>
+          <div class="timeline">
+            <div class="timeline-event">
+              <h3>2022 - Die Gründung</h3>
+              <p>
+                EWRA Trading wurde 2022 mit der Vision gegründet, hochwertige,
+                handgemachte Bonbons zu produzieren.
+              </p>
             </div>
-
-            <h2>Unser Team</h2>
-            <div class="team-section">
-                <div class="team-member">
-                    <img
-                        src="resources/images/user-male-black.png"
-                        alt="Team Mitglied Joel"
-                    />
-                    <h3>Joel</h3>
-                    <p>Geschäftsführer</p>
-                </div>
-                <div class="team-member">
-                    <img
-                        src="resources/images/user-male-blonde.png"
-                        alt="Team Mitglied Julian"
-                    />
-                    <h3>Julian</h3>
-                    <p>Geschäftsführer</p>
-                </div>
+            <div class="timeline-event">
+              <h3>2023 - Erweiterung der Produktpalette</h3>
+              <p>
+                Mit neuen Geschmackssorten und innovativen Verpackungen
+                expandierte EWRA Trading in ganz Europa.
+              </p>
             </div>
-        </section>
+            <div class="timeline-event">
+              <h3>2024 - Online-Shop</h3>
+              <p>
+                Im Jahr 2024 wurde der Online-Shop eröffnet, um unsere Produkte
+                einem breiteren Publikum anzubieten.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <h2>Unser Team</h2>
+        <div class="team-section">
+          <div class="team-member">
+            <img
+              src="resources/images/user-male-black.png"
+              alt="Team Mitglied Joel"
+            />
+            <h3>Joel</h3>
+            <p>Geschäftsführer</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="resources/images/user-male-blonde.png"
+              alt="Team Mitglied Julian"
+            />
+            <h3>Julian</h3>
+            <p>Geschäftsführer</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; EWRA Trading 2024 | <a href="impressum.html">Impressum</a> | <a
-                href="datenschutz.html">Datenschutz</a></p>
+      <p>
+        &copy; EWRA Trading 2024 | <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
     </footer>
 
-    <div
-        class="cart-overlay"
-        id="cart-overlay"
-    >
-        <div class="cart-content">
-            <h2>Dein Warenkorb</h2>
-            <div class="cart-items"><!-- Placeholder for cart items --></div>
+    <!-- Warenkorb Overlay -->
+    <div class="cart-overlay" id="cart-overlay">
+      <div class="cart-content">
+        <h2>
+          Dein Warenkorb
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            id="close-cart-img"
+            class="close-cart-icon"
+          >
+            <path
+              d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031
+              L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 
+              3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+            ></path>
+          </svg>
+        </h2>
+        <div class="cart-items">
+          <div class="cart-item">Dein Warenkorb ist leer.</div>
         </div>
+      </div>
     </div>
 
-    <script
-        src="resources/js/cart.js"
-        defer
-    ></script>
-</body>
-
+    <script src="resources/js/script.js" defer></script>
+  </body>
 </html>

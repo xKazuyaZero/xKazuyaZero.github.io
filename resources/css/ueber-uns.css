@@ -19,21 +19,24 @@
 }
 
 .about-us h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 5px;
   color: #333;
 }
 
 .about-us h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 5px;
   color: #333;
 }
 
+.about-us h3 {
+  font-size: 1.3rem;
+}
+
 .about-us p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #666;
   margin-bottom: 20px;
   text-align: center;
@@ -44,7 +47,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 Spalten für Desktops */
   gap: 20px;
-  padding: 50px 0;
+  margin: 20px 0 0;
 }
 
 .team-member {
@@ -69,6 +72,24 @@
 }
 
 .team-member p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #666;
+}
+
+/* Tablet Bildschirme */
+@media (max-width: 1024px) {
+  .team-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Handy Bildschirme */
+@media (max-width: 768px) {
+  .team-section {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member {
+    margin-bottom: 20px;
+  }
 }

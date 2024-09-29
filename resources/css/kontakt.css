@@ -14,19 +14,19 @@
 }
 
 .contact-us h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 60px 0 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 60px 0 5px;
 }
 
 .contact-us img {
-    width: 25px;
-    height: auto;
-    margin: 0 9px 0px;
+  width: 25px;
+  height: auto;
+  margin: 0 9px 0px;
 }
 
 .black {
-    color: #000;
+  color: #000;
 }
 
 .contact-us p {
@@ -78,4 +78,29 @@
 .contact-us textarea {
   height: 150px;
   resize: none;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  aspect-ratio: 1 / 1;
+  border: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .map iframe {
+    max-width: 90%;
+  }
 }

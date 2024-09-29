@@ -9,8 +9,16 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link rel="stylesheet" href="resources/css/main.css" />
-    <title>EWRA Trading Shop</title>
+    <title>Herzbonbons | Shop</title>
   </head>
 
   <body>
@@ -23,17 +31,26 @@
           aria-label="EWRA Logo"
         />
       </div>
+
+      <!-- Burger Menu Icon -->
+      <div class="burger-menu" id="burger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html">Shop</a></li>
           <li><a href="ueber-uns.html">Über uns</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
       <!-- Warenkorb oben rechts -->
       <div class="cart-btn">
-        <button aria-label="Open Cart">Warenkorb 🛒</button>
+        <button id="open-cart-btn" aria-label="Open Cart">
+          Warenkorb 🛒 - <span id="cart-quantity">0</span>
+        </button>
       </div>
     </header>
 
@@ -41,29 +58,40 @@
       <!-- Willkommen's Text unter der Nav mit hintergrund -->
       <section class="hero">
         <div class="hero-content">
-          <h1>Willkommen bei EWRA Trading</h1>
+          <h1>Willkommen</h1>
           <p>Entdecke unsere süßen Köstlichkeiten mit Herz!</p>
-          <button class="buy-now-btn" role="button" aria-label="Discover Candy">
-            Entdecken Sie unsere Bonbons!
-          </button>
+          <a href="#hero-btn">
+            <button
+              class="explore-now-btn"
+              role="button"
+              aria-label="Discover Candy"
+            >
+              Erfahren Sie mehr über unsere Bonbons!
+            </button>
+          </a>
         </div>
       </section>
 
+      <!-- Produkte Section -->
       <section class="product-highlights">
         <div class="product-grid">
           <!-- Produkt 1 -->
           <div class="product-card">
             <img
-              src="resources/images/highlight-rote-bonbons.jpg"
+              src="resources/images/red-bonbons.jpg"
               alt="Rote Bonbons"
               class="product-image"
               loading="lazy"
             />
             <h3 class="product-title">Rote Bonbons</h3>
             <p class="product-description">
-              Süße rote Bonbons, ideal für jeden Anlass.
+              Fruchtige Erdbeerbonbons, perfekt für Liebhaber.
             </p>
-            <button class="product-btn red">Mehr erfahren</button>
+            <p class="product-price">7.99€</p>
+            <button class="product-btn red">In den Warenkorb</button>
+            <p class="product-about">
+              <a href="rote-bonbons.html">Mehr erfahren</a>
+            </p>
           </div>
           <!-- Produkt 2 -->
           <div class="product-card">
@@ -75,29 +103,112 @@
             />
             <h3 class="product-title">Blaue Bonbons</h3>
             <p class="product-description">
-              Fruchtige blaue Bonbons für besondere Momente.
+              Erfrischend süße Himbeerbonbons für jeden Tag.
             </p>
-            <button class="product-btn blue">Mehr erfahren</button>
+            <p class="product-price">7.99€</p>
+            <button class="product-btn blue">In den Warenkorb</button>
+            <p class="product-about"><a href="#">Mehr erfahren</a></p>
           </div>
+        </div>
+      </section>
+
+      <!-- Produktbeschreibung -->
+      <section class="product-information" id="hero-btn">
+        <div class="product-paragraph">
+          <h2>Handgewickelte Rocks-Bonbons: Ein Genuss für Auge und Gaumen</h2>
+          <p>
+            Unsere handgewickelten Rocks-Bonbons stehen für feinste
+            Handwerkskunst und werden mit viel Liebe und Sorgfalt in unserer
+            Manufaktur hergestellt. In traditioneller Handarbeit entstehen
+            kleine Kunstwerke, die nicht nur geschmacklich, sondern auch optisch
+            begeistern. Die Bonbons sind in strahlendem Blau und Rot gehalten
+            und laden dazu ein, die süßen Aromen von Erdbeere und Himbeere zu
+            genießen.
+          </p>
+          <h2>Ein Fest für die Sinne</h2>
+          <p>
+            Mit jedem Moment erwartet Sie eine unvergleichliches
+            Geschmackserlebnis. Die Kombination aus fruchtig-süßer Erdbeere und
+            der leichten Frische der Himbeere macht unsere Rocks-Bonbons zu
+            einem echten Highlight für Naschkatzen. Die knalligen Farben der
+            Bonbons spiegeln die intensiven Aromen wider und machen sie zu einem
+            Blickfang in jeder Candy-Bar oder als kleines Geschenk auf Ihrer
+            Feier.
+          </p>
+          <h2>Perfekt für Hochzeiten und besondere Anlässe</h2>
+          <p>
+            Egal, ob Sie auf der Suche nach einer originellen Idee für
+            Gastgeschenke bei Ihrer Hochzeit sind oder Ihre Candy-Bar mit
+            außergewöhnlichen Süßigkeiten bestücken möchten – unsere
+            Rocks-Bonbons sind die perfekte Wahl. Sie passen zu jedem Anlass und
+            bringen Freude und Farbe in jede Feier. Durch ihre handliche Größe
+            sind sie ein idealer Snack für zwischendurch und eignen sich
+            hervorragend als kleine Aufmerksamkeit für Ihre Gäste.
+          </p>
+          <h2>Handgefertigt mit Liebe zum Detail</h2>
+          <p>
+            Jedes einzelne Bonbon wird in aufwendiger Handarbeit gefertigt und
+            von Hand gewickelt, wodurch jedes Stück zu einem Unikat wird. Wir
+            legen großen Wert auf Qualität und verwenden ausschließlich
+            hochwertige Zutaten, um Ihnen ein erstklassiges Produkt zu bieten.
+            Unser Ziel ist es, Ihnen mit jedem Bonbon einen Moment des Genusses
+            zu schenken, der durch die frischen, natürlichen Aromen noch
+            verstärkt wird.
+          </p>
+          <h2>Individuell und vielseitig einsetzbar</h2>
+          <p>
+            Unsere handgewickelten Rocks-Bonbons lassen sich auf vielfältige
+            Weise einsetzen: Ob als charmantes Mitbringsel, als Teil eines
+            liebevoll zusammengestellten Gastgeschenks oder als dekorativer
+            Blickfang auf Ihrem Fest. Sie sind nicht nur geschmacklich, sondern
+            auch optisch ein Highlight. Die Bonbons lassen sich auch individuell
+            verpacken und personalisieren, um sie perfekt an Ihre Wünsche und
+            den Anlass anzupassen.
+          </p>
+          <hr />
+          <p>
+            Lassen Sie sich von unseren handgefertigten Rocks-Bonbons verzaubern
+            und bringen Sie ein Stück süße Handwerkskunst in Ihren Alltag oder
+            Ihre nächste Feier!
+          </p>
         </div>
       </section>
     </main>
 
     <footer>
       <p>
-        &copy; EWRA Trading 2022 | <a href="impressum.html">Impressum</a> |
+        &copy; EWRA Trading 2024 | <a href="impressum.html">Impressum</a> |
         <a href="datenschutz.html">Datenschutz</a>
       </p>
     </footer>
 
     <!-- Warenkorb Overlay -->
-    <div id="cart-overlay" class="cart-overlay">
+    <div class="cart-overlay" id="cart-overlay">
       <div class="cart-content">
-        <h2>Warenkorb</h2>
-        <div id="cart-items"></div>
-        <button class="close-cart">Schließen</button>
+        <h2>
+          Dein Warenkorb
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            id="close-cart-img"
+            class="close-cart-icon"
+          >
+            <path
+              d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031
+              L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 
+              3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+            ></path>
+          </svg>
+        </h2>
+        <div class="cart-items">
+          <div class="cart-item">Dein Warenkorb ist leer.</div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="resources/js/cart.js" defer></script>
+  <script src="resources/js/script.js" defer></script>
 </html>
