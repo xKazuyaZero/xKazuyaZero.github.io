@@ -104,10 +104,10 @@ nav ul li a:hover:before {
     align-items: flex-start;
     padding: 20px;
     transform: translateX(-100%);
-    transition: transform 0.3s ease, opacity 0.3s ease;    
+    transition: transform 0.3s ease, opacity 0.3s ease;
     visibility: hidden;
     z-index: 1000;
-  } 
+  }
 
   /* When the menu is active */
   nav.active {
@@ -157,10 +157,15 @@ nav ul li a:hover:before {
 
 @media (max-width: 480px) {
   header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
 
   .logo img {
     width: 150px;
+    height: auto;
   }
 }
